@@ -1,7 +1,12 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "friggin-stopwatch",
+  "author": {
+    "name": "Annisa a.k.a xtrixia",
+    "url": "https://twitter.com/xtrixia"
+  },
+  "version": "0.0.1",
   "private": true,
+  "main": "/src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
