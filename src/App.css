@@ -1,3 +1,9 @@
+:root {
+  --base: #000000;
+  --leftside: 225px 15px 15px / 15px 225px;
+  --rightside: 15px 255px 15px / 225px 15px;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +40,63 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+div.Paper {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: var(--rightside);
+  padding: 3rem 5rem;
+  margin: 2rem 5rem;
+}
+
+div.Timer {
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div.Actions {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  border: 2px solid black;
+  border-radius: var(--leftside) !important;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: var(--base);
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+h1.Title {
+  display: inline-block;
+  width: 16px;
+}
+
+h1.Time {
+  padding: 8px;
+  text-align: right;
+}
+
+h2.Counter {
+  padding: 8px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 153px) {
+  h1.Title {
+    font-size: 12px;
+  }
+  h1.Time h1.Counter {
+    font-size: 10px;
   }
 }
