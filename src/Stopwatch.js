@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
 
 import "./App.css";
 
-function Stopwatch(setRoute) {
+function Stopwatch() {
   const timerRef = useRef();
   const [seconds, setSeconds] = useState(0);
 
@@ -40,7 +39,6 @@ function Stopwatch(setRoute) {
           told you it's <i style={{ color: "#f4f4" }}>just</i> a friggin'
           stopwatch
         </h1>
-        <Link to="/news">GOOGOGOO</Link>
 
         <div className="Timer">
           <h1 className="Time">{`${h}.${m}`}</h1>
